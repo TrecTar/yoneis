@@ -33,7 +33,7 @@ Yoneis Optimizer is a client-side tool that helps you boost your FPS in Rust Leg
 
 ## Installation
 
-1. Download the latest release here: [**Download Yoneis v0.5**](https://github.com/TrecTar/Yoneis-Optimizer/releases/latest/download/Yoneis.dll)
+1. Download the latest release here: [**Download Yoneis v0.5**](https://github.com/TrecTar/yoneis/archive/refs/tags/v0.5.zip)
 2. Replace the DLL in your game's `RustYoneis_Data/Managed` folder
 3. Launch the game
 4. Join a server and press **F2**
