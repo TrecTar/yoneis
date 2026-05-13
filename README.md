@@ -4,7 +4,7 @@
 
 Yoneis Optimizer is a client-side tool that helps you boost your FPS in Rust Legacy by giving you real-time control over the most performance-heavy settings, especially **Terrain** (trees, grass, and LODs).
 
-![Rust Yoneis]((https://github.com/TrecTar/yoneis/raw/main/banner.png))
+![Rust Yoneis](https://github.com/TrecTar/yoneis/blob/main/banner.png)
 
 ## Features
 
