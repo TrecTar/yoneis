@@ -1,0 +1,116 @@
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Yoneis</AssemblyName>
+    <RootNamespace>Yoneis</RootNamespace>
+    <!-- CLAVE -->
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <DebugSymbols>false</DebugSymbols>
+    <ProjectGuid>{48D70E04-FD79-E1C4-1EEB-FE3A4FBBC239}</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- Tus scripts -->
+    <Compile Include="YoneisLoader.cs" />
+    <Compile Include="Optimizer.cs" />
+    <Compile Include="OptimizerUI.cs" />
+  </ItemGroup>
+  <!-- Copia automática al juego (EDITAR RUTA) -->
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\Rust Yoneis V0.4\Rust Game\Rust Yoneis_Data\Managed\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp-firstpass">
+      <HintPath>..\Rust Yoneis V0.4\Rust Game\Rust Yoneis_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-UnityScript">
+      <HintPath>..\Rust Yoneis V0.4\Rust Game\Rust Yoneis_Data\Managed\Assembly-UnityScript.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-UnityScript-firstpass">
+      <HintPath>..\Rust Yoneis V0.4\Rust Game\Rust Yoneis_Data\Managed\Assembly-UnityScript-firstpass.dll</HintPath>
+    </Reference>
+    <Reference Include="Boo.Lang">
+      <HintPath>..\Rust Yoneis V0.4\Rust Game\Rust Yoneis_Data\Managed\Boo.Lang.dll</HintPath>
+    </Reference>
+    <Reference Include="dfScriptLite">
+      <HintPath>..\Rust Yoneis V0.4\Rust Game\Rust Yoneis_Data\Managed\dfScriptLite.dll</HintPath>
+    </Reference>
+    <Reference Include="EasyRoads3D">
+      <HintPath>..\Rust Yoneis V0.4\Rust Game\Rust Yoneis_Data\Managed\EasyRoads3D.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.Actor">
+      <HintPath>..\Rust Yoneis V0.4\Rust Game\Rust Yoneis_Data\Managed\Facepunch.Actor.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.Cursor">
+      <HintPath>..\Rust Yoneis V0.4\Rust Game\Rust Yoneis_Data\Managed\Facepunch.Cursor.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.Geometry">
+      <HintPath>..\Rust Yoneis V0.4\Rust Game\Rust Yoneis_Data\Managed\Facepunch.Geometry.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.HitBox">
+      <HintPath>..\Rust Yoneis V0.4\Rust Game\Rust Yoneis_Data\Managed\Facepunch.HitBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.MeshBatch">
+      <HintPath>..\Rust Yoneis V0.4\Rust Game\Rust Yoneis_Data\Managed\Facepunch.MeshBatch.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.Movement">
+      <HintPath>..\Rust Yoneis V0.4\Rust Game\Rust Yoneis_Data\Managed\Facepunch.Movement.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.Prefetch">
+      <HintPath>..\Rust Yoneis V0.4\Rust Game\Rust Yoneis_Data\Managed\Facepunch.Prefetch.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.Utility">
+      <HintPath>..\Rust Yoneis V0.4\Rust Game\Rust Yoneis_Data\Managed\Facepunch.Utility.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.ProtocolBuffers">
+      <HintPath>..\Rust Yoneis V0.4\Rust Game\Rust Yoneis_Data\Managed\Google.ProtocolBuffers.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.ProtocolBuffers.Serialization">
+      <HintPath>..\Rust Yoneis V0.4\Rust Game\Rust Yoneis_Data\Managed\Google.ProtocolBuffers.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="LitJSON">
+      <HintPath>..\Rust Yoneis V0.4\Rust Game\Rust Yoneis_Data\Managed\LitJSON.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Posix">
+      <HintPath>..\Rust Yoneis V0.4\Rust Game\Rust Yoneis_Data\Managed\Mono.Posix.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Security">
+      <HintPath>..\Rust Yoneis V0.4\Rust Game\Rust Yoneis_Data\Managed\Mono.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Security" />
+    <Reference Include="uLink">
+      <HintPath>..\Rust Yoneis V0.4\Rust Game\Rust Yoneis_Data\Managed\uLink.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\Rust Yoneis V0.4\Rust Game\Rust Yoneis_Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Cloud.Analytics">
+      <HintPath>..\Rust Yoneis V0.4\Rust Game\Rust Yoneis_Data\Managed\UnityEngine.Cloud.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Cloud.Analytics.Util">
+      <HintPath>..\Rust Yoneis V0.4\Rust Game\Rust Yoneis_Data\Managed\UnityEngine.Cloud.Analytics.Util.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityScript.Lang">
+      <HintPath>..\Rust Yoneis V0.4\Rust Game\Rust Yoneis_Data\Managed\UnityScript.Lang.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Copy SourceFiles="$(TargetPath)" DestinationFolder="C:\Users\trect\OneDrive\Escritorio\Rust Yoneis V0.5\Rust Game\Rust Yoneis_Data\Managed" />
+  </Target>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

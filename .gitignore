@@ -1,0 +1,15 @@
+# C# / Visual Studio
+.vs/
+bin/
+obj/
+*.suo
+*.user
+
+# Builds
+Debug/
+Release/
+Publish/
+
+# NuGet
+packages/
+*.nupkg
